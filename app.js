@@ -40,6 +40,49 @@ app.post('/movies', function(req, res) {
     });
 });
 
+app.get('/movies/:moviename/:actor/:stuff', function(req, res) {
+    var movie = req.params.moviename;
+    var actor = req.params.actor;
+    console.log('actor : ' + actor);
+    console.log('moviename : ' + movie);
+    res.send(req.params);
+});
+
 app.listen(8080, function() {
     console.log('Express app listening on port 8080');
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
